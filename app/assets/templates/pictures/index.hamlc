@@ -13,4 +13,7 @@
 
 / %hr
 
-%
+%div{:"ng-repeat" => "picture in pictures"}
+  %h2 {{picture.title}}
+  %h4 {{picture.artist}}
+  %img{:"ng-src" => "{{picture.url}}"}
