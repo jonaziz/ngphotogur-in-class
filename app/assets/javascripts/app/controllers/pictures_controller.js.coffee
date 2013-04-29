@@ -1,18 +1,18 @@
 @photogur.controller("PicturesController", ($scope) ->
-  $scope.name = "homer"
+  # $scope.name = "homer"
   
-  console.log "Pictures controller is live!"
-  # Ways to debug / explore scope
-  # console.log $scope
-  # window.debugcheck = $scope
-  # Can also use actual debug tool in chrome
+  # console.log "Pictures controller is live!"
+  # # Ways to debug / explore scope
+  # # console.log $scope
+  # # window.debugcheck = $scope
+  # # Can also use actual debug tool in chrome
 
-  $scope.$watch('name', ->
-    console.log "Name changed to #{$scope.name}"
-  )
+  # $scope.$watch('name', ->
+  #   console.log "Name changed to #{$scope.name}"
+  # )
 
-  $scope.isHomer = ->
-    return $scope.name.toLowerCase() == 'homer'
+  # $scope.isHomer = ->
+  #   return $scope.name.toLowerCase() == 'homer'
 
   $scope.pictures = [
     {

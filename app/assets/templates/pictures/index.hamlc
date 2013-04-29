@@ -1,16 +1,16 @@
 %h1 Page is index.hamlc
 %a{:href => "/pictures/new"} New Picture
 
-%p {{ pictures[0].title }}
+/ %p {{ pictures[0].title }}
 
-%p {{name}}
+/ %p {{name}}
 
-%input{:"ng-model" => "name"}
+/ %input{:"ng-model" => "name"}
 
 
-%p{:"ng-show" => "isHomer()"} {{name}} simpson!
-%p{:"ng-show" => "!isHomer()"} {{name}}
+/ %p{:"ng-show" => "isHomer()"} {{name}} simpson!
+/ %p{:"ng-show" => "!isHomer()"} {{name}}
 
-%hr
+/ %hr
 
 %
