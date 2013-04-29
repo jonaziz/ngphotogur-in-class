@@ -1,0 +1,3 @@
+@photogur.controller("PicturesController", ($scope) ->
+
+)

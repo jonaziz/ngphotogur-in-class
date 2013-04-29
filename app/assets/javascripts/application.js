@@ -18,3 +18,5 @@
 //
 // Photogur application
 //= require app/initialize
+//= require_tree ../templates
+//= require_tree ./app/controllers
