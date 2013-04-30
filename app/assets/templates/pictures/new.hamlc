@@ -4,6 +4,7 @@
   %label Title
   %br
   %input{:type => "test", :"ng-model" => "newPicture.title"}
+  %p{:"ng-show" => "errors.title"} Title {{errors.title.join(", ")}}!
 
 %p
   %label Artist
@@ -14,5 +15,6 @@
   %label URL
   %br
   %input{:type => "test", :"ng-model" => "newPicture.url"}
+  %p{:"ng-show" => "errors.url"} URL {{errors.url.join(", ")}}!
 
 %button{:"ng-click" => "savePicture()"} Save
