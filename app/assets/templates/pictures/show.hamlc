@@ -2,3 +2,6 @@
 %h4 {{picture.artist}}
 
 %img{:"ng-src" => "{{picture.url}}"}
+
+%p
+  %a{:href => "/pictures"} Return Home

@@ -18,5 +18,6 @@
   %a{:href => "pictures/1"}
     %h2 {{picture.title}}
   %h4 {{picture.artist}}
-  %img{:"ng-src" => "{{picture.url}}"}
+  %a{:href => "pictures/1"}
+    %img{:"ng-src" => "{{picture.url}}"}
 
