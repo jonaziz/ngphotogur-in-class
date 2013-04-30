@@ -1,10 +1,7 @@
-@photogur.controller("PictureController", ($scope) ->
+@photogur.controller("PictureController", ($scope, Picture) ->
 
-  $scope.picture = 
-    {
-      title : "The old church on the coast of White sea",
-      artist: "Sergey Ershov",
-      url   : "http://monicao.s3.amazonaws.com/bitmaker/house.jpg"
-    }
-
+  $scope.picture = Picture.get(
+    {"@id"},
+    
+    )
 )
