@@ -1,1 +1,20 @@
-%h1 This is edit.hamlc
+%h1 Edit Picture - {{picture.title}}
+
+%p
+  %label Title
+  %br
+  %input{:type => "test", :"ng-model" => "picture.title"}
+  %p{:"ng-show" => "errors.title"} Title {{errors.title.join(", ")}}!
+
+%p
+  %label Artist
+  %br
+  %input{:type => "test", :"ng-model" => "picture.artist"}
+
+%p
+  %label URL
+  %br
+  %input{:type => "test", :"ng-model" => "picture.url"}
+  %p{:"ng-show" => "errors.url"} URL {{errors.url.join(", ")}}!
+
+%button{:"ng-click" => "updatePicture()"} Save
