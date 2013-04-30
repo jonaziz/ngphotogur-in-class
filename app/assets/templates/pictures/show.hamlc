@@ -1,3 +1,5 @@
+%div.error{:"ng-show" => "errorMessage"}
+  %h3 {{errorMessage}}
 %h1 {{picture.title}}
 %h4 {{picture.artist}}
 

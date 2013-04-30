@@ -19,8 +19,8 @@
 
   $scope.pictures = Picture.query(
     (data) ->
-      console.log("Success")
+      console.log("Successfully retreived pictures")
     , (data)->
-      console.log("Error")
+      console.log("Error retreiving pictures")
     )
 )
