@@ -28,4 +28,9 @@
 
   $scope.savePicture = ->
     console.log "The picture is ", $scope.newPicture
+    Picture.save($scope.newPicture, (data) ->
+      console.log ("Image saved!")
+    , (data)->
+      console.log ("Could not save picture!")
+    )
 )
