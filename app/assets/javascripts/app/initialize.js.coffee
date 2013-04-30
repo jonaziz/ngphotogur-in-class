@@ -1,4 +1,4 @@
-@photogur = angular.module('photogur', [])
+@photogur = angular.module('photogur', ['ngResource'])
 # window.photogur = angular.module('photogur', [])
 
 @photogur.config(($routeProvider, $locationProvider) ->
