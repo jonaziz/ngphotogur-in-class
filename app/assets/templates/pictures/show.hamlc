@@ -1,1 +1,4 @@
-%h1 This is show.hamlc
+%h1 {{picture.title}}
+%h4 {{picture.artist}}
+
+%img{:"ng-src" => "{{picture.url}}"}
