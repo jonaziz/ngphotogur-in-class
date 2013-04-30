@@ -2,6 +2,8 @@
 # # Useful for testing vs. creating fake classes when testing API-dependant app
 # # Dependency inject just requires you to give some data, passed into constructor as a variable 
 @photogur.controller("PicturesController", ($scope, Picture) ->
+  # This is not required to create variables, but it helps to document them
+  $scope.newPicture
   # $scope.name = "homer"
   
   # console.log "Pictures controller is live!"
@@ -23,4 +25,7 @@
     , (data)->
       console.log("Error retreiving pictures")
     )
+
+  $scope.savePicture = ->
+    console.log "The picture is ", $scope.newPicture
 )

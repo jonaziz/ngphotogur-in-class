@@ -1,1 +1,18 @@
-%h1 This is new.hamlc
+%h1 New Picture
+
+%p
+  %label Title
+  %br
+  %input{:type => "test", :"ng-model" => "newPicture.title"}
+
+%p
+  %label Artist
+  %br
+  %input{:type => "test", :"ng-model" => "newPicture.artist"}
+
+%p
+  %label URL
+  %br
+  %input{:type => "test", :"ng-model" => "newPicture.url"}
+
+%button{:"ng-click" => "savePicture()"} Save
